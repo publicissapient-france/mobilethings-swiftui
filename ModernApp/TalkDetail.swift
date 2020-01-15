@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct TalkDetail: View {
-    @State var talk: Talk
+    @Binding var talk: Talk
     var body: some View {
         VStack(alignment: .leading) {
             Text(talk.title)
@@ -25,6 +25,6 @@ struct TalkDetail: View {
 
 struct TalkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        TalkDetail(talk: Talk.sample)
+        TalkDetail(talk: .constant(Talk.sample))
     }
 }

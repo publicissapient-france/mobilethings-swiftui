@@ -3,12 +3,12 @@ import SwiftUI
 extension Talk: Identifiable { }
 
 struct TalkList: View {
-    let talks: [Talk]
+    @State var talks: [Talk]
     var body: some View {
         NavigationView {
-            List(talks) { talk in
-                NavigationLink(destination: TalkDetail(talk: talk)) {
-                    TalkRow(talk: talk)
+            List(talks.indices) { index in
+                NavigationLink(destination: TalkDetail(talk: self.$talks[index])) {
+                    TalkRow(talk: self.talks[index])
                 }
             }
             .navigationBarTitle("FrenchKit")
