@@ -4,6 +4,8 @@ extension Talk: Identifiable { }
 
 struct TalkList: View {
     @State var talks: [Talk]
+    @EnvironmentObject var session: Session
+
     var body: some View {
         NavigationView {
             List(talks.indices) { index in
@@ -12,6 +14,22 @@ struct TalkList: View {
                 }
             }
             .navigationBarTitle("FrenchKit")
+            .navigationBarItems(trailing: LoginButton())
+        }
+    }
+}
+
+struct LoginButton: View {
+    @EnvironmentObject var session: Session
+    var body: some View {
+        Button(action: {
+            self.session.isUserLogged.toggle()
+        }) {
+            if session.isUserLogged {
+                Text("Logout")
+            } else {
+                Text("Login")
+            }
         }
     }
 }
@@ -19,5 +37,6 @@ struct TalkList: View {
 struct TalkList_Previews: PreviewProvider {
     static var previews: some View {
         TalkList(talks: Talk.sampleList)
+            .environmentObject(Session())
     }
 }

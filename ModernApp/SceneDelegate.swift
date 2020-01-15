@@ -9,7 +9,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             // TODO: Uncomment this line
-            // window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView:
+                TalkList(talks: Talk.sampleList)
+                    .environmentObject(Session())
+            )
             self.window = window
             window.makeKeyAndVisible()
         }

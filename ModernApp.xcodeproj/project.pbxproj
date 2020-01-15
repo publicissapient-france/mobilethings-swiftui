@@ -10,6 +10,7 @@
 		426F667423CF239D0075E7E1 /* TalkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F667323CF239D0075E7E1 /* TalkRow.swift */; };
 		426F667623CF4E4F0075E7E1 /* TalkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F667523CF4E4F0075E7E1 /* TalkList.swift */; };
 		426F667823CF54720075E7E1 /* TalkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F667723CF54720075E7E1 /* TalkDetail.swift */; };
+		427948F623CF626200C88A3C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427948F523CF626200C88A3C /* Session.swift */; };
 		49FB62092337D02100C5766E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB62082337D02100C5766E /* AppDelegate.swift */; };
 		49FB620B2337D02100C5766E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB620A2337D02100C5766E /* SceneDelegate.swift */; };
 		49FB620F2337D02400C5766E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FB620E2337D02400C5766E /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		426F667323CF239D0075E7E1 /* TalkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkRow.swift; sourceTree = "<group>"; };
 		426F667523CF4E4F0075E7E1 /* TalkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkList.swift; sourceTree = "<group>"; };
 		426F667723CF54720075E7E1 /* TalkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkDetail.swift; sourceTree = "<group>"; };
+		427948F523CF626200C88A3C /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		49FB62052337D02100C5766E /* ModernApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FB62082337D02100C5766E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49FB620A2337D02100C5766E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				49FB62162337D02400C5766E /* Info.plist */,
 				49FB62202337D4E700C5766E /* Talk.swift */,
+				427948F523CF626200C88A3C /* Session.swift */,
 				49FB62082337D02100C5766E /* AppDelegate.swift */,
 				49FB620A2337D02100C5766E /* SceneDelegate.swift */,
 				426F667323CF239D0075E7E1 /* TalkRow.swift */,
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427948F623CF626200C88A3C /* Session.swift in Sources */,
 				426F667423CF239D0075E7E1 /* TalkRow.swift in Sources */,
 				426F667623CF4E4F0075E7E1 /* TalkList.swift in Sources */,
 				49FB62092337D02100C5766E /* AppDelegate.swift in Sources */,
