@@ -7,7 +7,9 @@ struct TalkList: View {
     var body: some View {
         NavigationView {
             List(talks) { talk in
-                TalkRow(talk: talk)
+                NavigationLink(destination: TalkDetail(talk: talk)) {
+                    TalkRow(talk: talk)
+                }
             }
             .navigationBarTitle("FrenchKit")
         }
