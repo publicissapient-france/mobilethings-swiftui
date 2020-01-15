@@ -30,6 +30,19 @@ struct TalkRow: View {
 
 struct TalkRow_Previews: PreviewProvider {
     static var previews: some View {
-        TalkRow(talk: Talk.sample)
+        Group {
+            TalkRow(talk: Talk.sample)
+                .previewLayout(.sizeThatFits)
+                .previewDisplayName("No favorite")
+
+            TalkRow(talk: Talk.sampleFavorite)
+                .previewLayout(.sizeThatFits)
+                .previewDisplayName("Favorite")
+
+            TalkRow(talk: Talk.sampleFavorite)
+                .previewDevice(PreviewDevice(rawValue: "iPad mini 4"))
+                .previewDisplayName("Favorite")
+
+        }
     }
 }
