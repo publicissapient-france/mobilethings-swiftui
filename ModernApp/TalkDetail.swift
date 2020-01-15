@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct TalkDetail: View {
-    let talk: Talk
+    @State var talk: Talk
     var body: some View {
         VStack(alignment: .leading) {
             Text(talk.title)
