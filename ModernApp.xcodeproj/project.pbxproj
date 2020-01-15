@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		426F667423CF239D0075E7E1 /* TalkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F667323CF239D0075E7E1 /* TalkRow.swift */; };
+		426F667623CF4E4F0075E7E1 /* TalkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F667523CF4E4F0075E7E1 /* TalkList.swift */; };
 		49FB62092337D02100C5766E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB62082337D02100C5766E /* AppDelegate.swift */; };
 		49FB620B2337D02100C5766E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB620A2337D02100C5766E /* SceneDelegate.swift */; };
 		49FB620F2337D02400C5766E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FB620E2337D02400C5766E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		426F667323CF239D0075E7E1 /* TalkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkRow.swift; sourceTree = "<group>"; };
+		426F667523CF4E4F0075E7E1 /* TalkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkList.swift; sourceTree = "<group>"; };
 		49FB62052337D02100C5766E /* ModernApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FB62082337D02100C5766E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49FB620A2337D02100C5766E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				49FB620E2337D02400C5766E /* Assets.xcassets */,
 				49FB62132337D02400C5766E /* LaunchScreen.storyboard */,
 				49FB62102337D02400C5766E /* Preview Content */,
+				426F667523CF4E4F0075E7E1 /* TalkList.swift */,
 			);
 			path = ModernApp;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				426F667423CF239D0075E7E1 /* TalkRow.swift in Sources */,
+				426F667623CF4E4F0075E7E1 /* TalkList.swift in Sources */,
 				49FB62092337D02100C5766E /* AppDelegate.swift in Sources */,
 				49FB620B2337D02100C5766E /* SceneDelegate.swift in Sources */,
 				49FB62212337D4E700C5766E /* Talk.swift in Sources */,
